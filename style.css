@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    background: #ffffff;
+    width: 350px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 4px solid #667eea;
+}
+
+.profile-card h1 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.profile-card h3 {
+    color: #555;
+    font-size: 16px;
+}
+
+.college {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #667eea;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 8px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #5563d6;
+}
+
+#moreDetails {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#moreDetails h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#moreDetails ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+#moreDetails ul li {
+    background: #f0f0ff;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+#moreDetails a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
