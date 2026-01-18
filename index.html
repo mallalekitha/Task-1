@@ -2,36 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Student Profile</title>
+    <title>Computer Science Department</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="fade-in">
 
-    <div class="profile-card">
-        <img src="https://via.placeholder.com/150" alt="Student Photo">
+    <!-- Header -->
+    <header class="header">
+        <h1>Department of Computer Science</h1>
+        <p>Innovate • Learn • Build the Future</p>
+    </header>
 
-        <h1>Lekitha</h1>
-        <h3>B.Tech – Computer Science and Engineering</h3>
-        <p class="college">BITS Engineering College</p>
+    <!-- Overview -->
+    <section class="section card slide-up">
+        <h2>📘 Department Overview</h2>
+        <p>
+            The Computer Science Department focuses on developing strong
+            programming, problem-solving, and analytical skills to prepare
+            students for careers in software and IT industries.
+        </p>
+    </section>
 
-        <button id="welcomeBtn">Welcome</button>
-        <button id="detailsBtn">Show More Details</button>
+    <!-- Courses -->
+    <section class="section card slide-up">
+        <h2>📚 Courses Offered</h2>
+        <ul>
+            <li>B.Tech Computer Science & Engineering</li>
+            <li>M.Tech Computer Science</li>
+            <li>Artificial Intelligence & Data Science</li>
+            <li>Cyber Security</li>
+        </ul>
+    </section>
 
-        <div id="moreDetails" class="hidden">
-            <h4>Subjects</h4>
-            <ul>
-                <li>Web Development</li>
-                <li>Java Programming</li>
-                <li>Data Structures</li>
-                <li>Database Management Systems</li>
-            </ul>
+    <!-- Faculty -->
+    <section class="section card slide-up">
+        <h2>👩‍🏫 Faculty Members</h2>
+        <ul>
+            <li>Dr. A. Kumar – Professor</li>
+            <li>Ms. R. Sharma – Associate Professor</li>
+            <li>Mr. S. Reddy – Assistant Professor</li>
+            <li>Ms. P. Rao – Lecturer</li>
+        </ul>
+    </section>
 
-            <p>
-                Contact:
-                <a href="mailto:student@example.com">lekithamalla07@gmail.com</a>
-            </p>
-        </div>
-    </div>
+    <!-- Button -->
+    <section class="button-section slide-up">
+        <button onclick="showDepartmentMessage()">
+            Why Choose This Department?
+        </button>
+    </section>
 
     <script src="script.js"></script>
 </body>
