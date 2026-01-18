@@ -6,88 +6,111 @@
 }
 
 body {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile-card {
-    background: #ffffff;
-    width: 350px;
-    padding: 30px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-}
-
-.profile-card img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    border: 4px solid #667eea;
-}
-
-.profile-card h1 {
+    background-color: #f4f6f8;
     color: #333;
-    margin-bottom: 5px;
 }
 
-.profile-card h3 {
-    color: #555;
+/* Fade In */
+.fade-in {
+    animation: fadeIn 1.2s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+.header p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Sections */
+.section {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* Card UI */
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+    margin-bottom: 12px;
+    color: #1e40af;
+}
+
+.card p,
+.card li {
     font-size: 16px;
+    line-height: 1.6;
 }
 
-.college {
-    color: #777;
-    margin-bottom: 20px;
+.card ul {
+    padding-left: 20px;
+}
+
+/* Slide Up Animation */
+.slide-up {
+    animation: slideUp 0.8s ease forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Section */
+.button-section {
+    text-align: center;
+    margin: 40px 0;
 }
 
 button {
-    background: #667eea;
-    color: #fff;
+    padding: 12px 25px;
+    font-size: 16px;
     border: none;
-    padding: 10px 20px;
-    margin: 8px;
-    border-radius: 25px;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
 }
 
 button:hover {
-    background: #5563d6;
+    background-color: #1e40af;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
 }
 
-#moreDetails {
-    margin-top: 20px;
-    text-align: left;
-}
-
-#moreDetails h4 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-#moreDetails ul {
-    list-style: none;
-    margin-bottom: 10px;
-}
-
-#moreDetails ul li {
-    background: #f0f0ff;
-    margin: 5px 0;
-    padding: 8px;
-    border-radius: 10px;
-}
-
-#moreDetails a {
-    color: #667eea;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.hidden {
-    display: none;
+button:active {
+    transform: scale(0.95);
 }
